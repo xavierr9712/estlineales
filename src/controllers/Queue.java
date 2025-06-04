@@ -8,6 +8,7 @@ public class Queue {
 
     private Node primero;
     private Node ultimo; 
+    private  int size;
 
     public Queue() {
         this.primero = null;
@@ -30,8 +31,14 @@ public class Queue {
             throw new EmptyStackException();
         }
 
+        int aux= primero.getValue();
         primero = primero.getNext();
-        return primero.getValue();
+        size--;
+        return aux;
+        
+    }
+    public int peek(){
+        if (isEmpty()) throw new EmptyStackException(); size++; return primero.getValue();
     }
     
     public boolean isEmpty(){
