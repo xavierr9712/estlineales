@@ -51,9 +51,9 @@ public class QueueG <T> {
 
     public void printCola (){ 
         NodeGeneric<T> current = primero;
-        System.out.print("Queue (Generic): ");
+        
         while (current != null) {
-            System.out.print(current.getValue() + " ");
+            System.out.print(current.getValue() + "|");
             current = current.getNext();
         }
         System.out.println();
