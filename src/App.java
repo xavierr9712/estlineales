@@ -7,11 +7,12 @@ public class App {
 
         StackG <Integer> pilaG = new StackG<Integer>();
 
-        pilaG.push(5);
+        pilaG.push(10);
         pilaG.push(8);
         pilaG.push(-1);
         pilaG.push(5);
         System.out.println("Tam = " + pilaG.size());
+        pilaG.printStack();
         pilaG.pop();
         System.out.println("Tam = " + pilaG.size());
         pilaG.printStack();

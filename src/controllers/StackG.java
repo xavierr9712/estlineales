@@ -48,7 +48,7 @@ public class StackG <T>{
         NodeGeneric<T> current = top;
         
         while (current != null) {
-            System.out.print(current.getValue() + " ");
+            System.out.print(current.getValue() + "|");
             current = current.getNext();
         }
         System.out.println();
